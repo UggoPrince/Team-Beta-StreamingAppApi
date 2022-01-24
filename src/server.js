@@ -5,7 +5,7 @@ const app = express();
 
 dotenv.config();
 let broadcaster;
-const port = 9001;
+const port = process.env.PORT || 9001;
 
 const http = require("http");
 const server = http.createServer(app);
