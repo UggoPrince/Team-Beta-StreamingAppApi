@@ -14,7 +14,7 @@ app.use(cors());
 
 const io = require("socket.io")(server, {
   cors: {
-    origin: process.env.WATCH_URL
+    origin: '*',
   },
 });
 io.sockets.on("error", e => console.log(e));
